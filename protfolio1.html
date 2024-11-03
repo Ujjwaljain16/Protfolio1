@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Poppins";
+        line-height: 1.6;
+        background-color: #f4f4f4;
+      }
+      nav {
+        background-color: #333;
+        padding: 1rem;
+        position: fixed;
+        width: 100%;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        margin: 0 1rem;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.1rem;
+      }
+      nav ul li a:hover {
+        color: #bb0a36;
+      }
+      .hero {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+        background-color: #2c3e50;
+        color: white;
+      }
+      .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+      .hero p {
+        font-size: 1.2rem;
+        max-width: 600px;
+      }
+      #about {
+        padding: 4rem 2rem;
+        background-color: white;
+      }
+      .section-title {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+      #projects {
+        padding: 4rem 2rem;
+        background-color: #f9f9f9;
+      }
+
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .project-card {
+        background-color: white;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .project-card h3 {
+        margin-bottom: 1rem;
+      }
+      #contact {
+        padding: 4rem 2rem;
+        background-color: white;
+        text-align: center;
+      }
+
+      .contact-form {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 0.8rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      .contact-form button {
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 0.8rem 2rem;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .contact-form button:hover {
+        background-color: #444;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+      }
+      .menu-icon {
+        display: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: white;
+      }
+
+      /* Responsive design */
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2rem;
+        }
+
+        nav ul {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        nav ul li {
+          margin: 0.5rem 0;
+        }
+        .nav-links {
+          display: none;
+        }
+        .nav-links.show {
+          display: flex;
+        }
+        .menu-icon {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </nav>
+    <section id="home" class="hero">
+      <h1>Welcome to My Portfolio</h1>
+      <p>
+        👋Hi, I'm Ujjwal Jain.I am a passionate software developer continously learning
+       & seeking new opportunities on a mission to create
+       internet a better place, one site at a time.
+      </p>
+    </section>
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+      <p style="font-size: 1.3em;">
+        Hi, I’m Ujjwal Jain — a computer science student at Scaler School of
+        Technology with a passion for tech and a focus on building solid skills
+        in Java, HTML, CSS, and JavaScript. I’m always curious and eager to
+        explore new tech, especially in AI and software development. Let’s
+        connect and create something impactful!
+        
+
+
+      </p>
+    </section>
+    <section id="projects">
+      <h1 class="section-title">Checkout my skills</h1>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h2 style="display: flex; justify-content: center;"> Web Design</h2>
+          <img style="display: block; margin: 0 auto;"
+            src="https://static.vecteezy.com/system/resources/thumbnails/006/414/204/small/internet-web-icon-in-trendy-flat-style-isolated-on-white-background-website-symbol-for-your-website-design-logo-app-ui-illustration-free-vector.jpg"
+            width="300" height="250">
+          <p style="font-size:1.1rem; text-align: center;">
+            With the help of latest technologies, I can develop modern and
+            beautiful websites.
+          </p>
+        </div>
+        <div class="project-card">
+          <h2 style="display: flex; justify-content: center;">Problem-Solver</h3>
+          <img style="display: block; margin: 0 auto;"
+            src="https://img.freepik.com/premium-vector/problem-solving-icon-doodle-style_67813-27353.jpg?semt=ais_hybrid" 
+            width="300" height="250">
+          <p  style="font-size:1.1rem; text-align: center;">
+            I can solve complex problems with my programming skills and
+            expertise.
+          </p>
+        </div>
+        <div class="project-card">
+          <h2 style="display: flex; justify-content: center;">Smart Work</h3>
+            <img style="display: block; margin: 0 auto;"
+            src="smartwork.jpg" 
+            width="300" height="250">
+          <p style="font-size:1.1rem; text-align: center;">
+            Working hard makes things comples, therefore I tries to work smart.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2 class="section-title">Contact Me</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+    <footer>
+      <p>&copy; 2024 Ujjwal Jain | All rights reserved.</p>
+    </footer>
+    <script>
+      function toggleMenu() {
+        const navLinks = document.querySelector(".nav-links");
+        navLinks.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>
